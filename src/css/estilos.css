@@ -36,12 +36,15 @@ html {
 #formulario {
     display: flex;
     flex-direction: column;
-    max-width: 34rem;
-    width: 100%;
+    width: 34rem;
     padding: 1.5rem;
     margin: 2rem;
+    
+    font-size: var(--fundoFormulario);
+    color: var(--corFonteFormulario);
 
     background-color: var(--fundoFormulario);
+    font-size: var(--fonteFormulario);
 }
 #formulario input, 
 #formulario textarea {
@@ -49,6 +52,8 @@ html {
     border-radius: 0.5rem;
     padding: 0.8rem 1rem;
     margin: 0.5rem;
+
+    font-family: 'Roboto', sans-serif;
 }
 #formulario input {
     margin-bottom: 1.5rem;
@@ -61,11 +66,15 @@ html {
 #formulario .span {
     margin-top: 0.7rem;
     margin-bottom: calc(2rem - 0.5rem);
+
+    font-weight: 400;
 }
 #formulario .botaoEnviar {
     border: none;
     background-color: var(--botao);
     color: var(--fonteBotao);
+    font-weight: 700;
+    font-size: var(--fonteFormulario);
     
     cursor: pointer;
     transition: 0.3s ease-in-out;
