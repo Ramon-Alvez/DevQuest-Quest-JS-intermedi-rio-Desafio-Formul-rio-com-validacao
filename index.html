@@ -21,19 +21,25 @@
             <p>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
         </section>
 
-        <form action="index.html" method="get" id="formulario">
-            <input type="text" name="nome" id="nome" placeholder="Nome completo *">
+        <div id="formulario">
+            <input class="inputDados" type="text" name="nome" id="nome" placeholder="Nome completo *">
+            <span class="campoObrigatorio">campo obrigatório</span>
 
-            <input type="email" name="email" id="email" placeholder="Email *">
+            <input class="inputDados" type="email" name="email" id="email" placeholder="Email *">
+            <span class="campoObrigatorio">campo obrigatório</span>
 
-            <input type="tel" name="telefone" id="telefone" placeholder="Telefone *">
+            <input class="inputDados" type="tel" name="telefone" id="telefone" placeholder="Telefone *">
+            <span class="campoObrigatorio">campo obrigatório</span>
 
-            <textarea name="mensagem" id="mensagem" placeholder="Mensagem *"></textarea>
+            <textarea class="inputDados" name="mensagem" id="mensagem" placeholder="Mensagem *"></textarea>
+            <span class="campoObrigatorio">campo obrigatório</span>
 
             <span class="span">*campos obrigatórios</span>
 
-            <input class="botaoEnviar" type="submit" value="Enviar">
-        </form>
+            <input id="botaoEnviar" type="submit" value="Enviar">
+        </div>
     </main>
+
+    <script src="src/js/index.js"></script>
 </body>
 </html>

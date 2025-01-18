@@ -46,17 +46,39 @@ html {
     background-color: var(--fundoFormulario);
     font-size: var(--fonteFormulario);
 }
-#formulario input, 
-#formulario textarea {
+#formulario .inputDados {
     border: 0.1rem solid black;
     border-radius: 0.5rem;
     padding: 0.8rem 1rem;
-    margin: 0.5rem;
+    margin: 0 0.5rem;
 
     font-family: 'Roboto', sans-serif;
 }
+
+/* Validação do Formulario */
+#formulario .inputDados.naoValidado {
+    border: 0.1rem solid var(--naoValidado);
+}
+#formulario .inputDados.validado {
+    border: 0.1rem solid var(--validado);
+}
+
+#formulario .campoObrigatorio {
+    color: var(--naoValidado);
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+    padding-bottom: 1rem;
+    opacity: 0;
+    cursor: default;
+}
+#formulario .campoObrigatorio.mostrar {
+    opacity: 1;
+    transition: 0.1s ease-in;
+}
+
+/* ----------------------------------- */
+
 #formulario input {
-    margin-bottom: 1.5rem;
     height: 3.5rem;
 }
 #formulario textarea {
@@ -69,7 +91,7 @@ html {
 
     font-weight: 400;
 }
-#formulario .botaoEnviar {
+#formulario #botaoEnviar {
     border: none;
     background-color: var(--botao);
     color: var(--fonteBotao);
@@ -79,6 +101,6 @@ html {
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
-#formulario .botaoEnviar:hover {
+#formulario #botaoEnviar:hover {
     opacity: 0.8;
 }
