@@ -1,0 +1,75 @@
+/* Fonte - Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+    background: url(../img/fundo.jpeg);
+    background-size: contain;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+#contato {
+    max-width: 30rem;
+    color: var(--corFontePrincipal);
+    padding-right: 1rem;
+    margin: 2rem;
+    margin-right: calc(6rem - 2rem);
+}
+#contato h1 {
+    font-size: var(--titulo);
+    font-weight: 900;
+    padding-bottom: 1rem;
+}
+#contato p {
+    font-size: var(--fontePrincipal);
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    max-width: 34rem;
+    width: 100%;
+    padding: 1.5rem;
+    margin: 2rem;
+
+    background-color: var(--fundoFormulario);
+}
+#formulario input, 
+#formulario textarea {
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+    padding: 0.8rem 1rem;
+    margin: 0.5rem;
+}
+#formulario input {
+    margin-bottom: 1.5rem;
+    height: 3.5rem;
+}
+#formulario textarea {
+    resize: none;
+    height: 10rem;
+}
+#formulario .span {
+    margin-top: 0.7rem;
+    margin-bottom: calc(2rem - 0.5rem);
+}
+#formulario .botaoEnviar {
+    border: none;
+    background-color: var(--botao);
+    color: var(--fonteBotao);
+    
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+#formulario .botaoEnviar:hover {
+    opacity: 0.8;
+}
